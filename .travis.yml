@@ -6,5 +6,5 @@ install:
   - npm install
   - npm install -g cypress-cli
 
-  script:
+script:
   - cypress ci
