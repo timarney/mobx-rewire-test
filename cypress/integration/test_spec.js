@@ -1,9 +1,18 @@
-describe('Initial Test', function(){
-  it('cy.should - assert that <title> is correct', function(){
+const page = '//localhost:3000'
 
-    // https://on.cypress.io/api/visit
-    cy.visit('//127.0.0.1:3000')
-    cy.title().should('include', 'Kitchen Sink')
+describe('MobX Render Test', function(){
+  it('Assert page rendered', function(){
+    cy.visit(page)
+    cy.get('#reset').should("have.length", 1)
+  })
+
+  it('Assert button rendered', function(){
+    cy.visit(page)
+    cy.get('.txt').should("have.text", 'Seconds passed:')
+    cy.get('.timer').first().wait(2000).then(function($input){
+      let val = $input[0].innerHTML
+      expect(val).to.be.gte(1)
+    })
   })
 
 })

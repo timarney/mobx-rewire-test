@@ -19,8 +19,8 @@ setInterval(function tick() {
 class App extends Component {
     render() {
         return (
-          <button onClick={()=> appState.resetTimer()}>
-                Seconds passed: {appState.timer}
+          <button id="reset" onClick={()=> appState.resetTimer()}>
+                <span className="txt">Seconds passed:</span> <span className="timer">{appState.timer}</span>
           </button>
          );
     }
