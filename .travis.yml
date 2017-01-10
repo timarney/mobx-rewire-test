@@ -7,7 +7,7 @@ install:
   - npm install -g cypress-cli
 
 before_script:
-  - npm start -- --silent &
+  - npm start
 
 script:
   - cypress ci 67670a2c-6745-4f72-b42d-9a7bf4f9d589
