@@ -1,4 +1,4 @@
-const page = '//localhost:3000'
+const page = 'http://localhost:3000'
 
 describe('MobX Render Test', function(){
   it('Assert page rendered', function(){
