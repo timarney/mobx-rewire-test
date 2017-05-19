@@ -1,15 +1,16 @@
 {
   "name": "react-app-rewire-mobx-test",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "canary"
+    "react-scripts": "1.0.0"
   },
   "dependencies": {
-    "react": "^15.4.2",
-    "react-app-rewire-mobx": "canary",
-    "react-app-rewired": "canary",
-    "react-dom": "^15.4.2"
+    "react": "^15.5.4",
+    "react-app-rewire-mobx": "^1.0.2",
+    "react-app-rewire-preact": "^1.0.1",
+    "react-app-rewired": "1.0.1",
+    "react-dom": "^15.5.4"
   },
   "scripts": {
     "start": "react-app-rewired start",
