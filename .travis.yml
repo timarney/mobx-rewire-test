@@ -1,13 +1,13 @@
 language: node_js
 
 node_js:
-  - 7
+  - 8
 
 before_install:
-  ## install the Cypress CLI Tools
+  ## install Cypress
   ## which gives us access to the
   ## `cypress` command used below
-  - npm install -g cypress-cli
+  - npm install -g cypress
 before_script:
   ## runs the 'start' script which
   ## boots our local app server on port 8888
@@ -32,4 +32,4 @@ script:
   ## environment var by default
   ## which you need to configure
   ## on Travis CI behind the scenes (repo settings link)
-  - cypress ci
+  - cypress run --record --key 
