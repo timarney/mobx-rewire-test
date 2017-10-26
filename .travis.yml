@@ -32,4 +32,4 @@ script:
   ## environment var by default
   ## which you need to configure
   ## on Travis CI behind the scenes (repo settings link)
-  - cypress run --record --key 
+  - cypress run
