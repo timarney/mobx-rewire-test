@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 import { observable, action } from "mobx";
 import { Provider, inject, observer } from "mobx-react";
-import styled from "emotion/react";
-
-const Wrapper = styled.div`
-  margin: 20px;
-  border: 1px solid #ff0000;
-  padding: 10px;
-`;
 
 class Store {
   @observable timer = 10;
@@ -52,9 +45,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={the_store}>
-        <Wrapper>
-          <Reset />
-        </Wrapper>
+        <Reset />
       </Provider>
     );
   }
