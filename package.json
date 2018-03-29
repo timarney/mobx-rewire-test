@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "babel-plugin-styled-components": "^1.5.1",
-    "react-scripts": "1.1.1"
+    "react-scripts": "react-scripts@2.0.0-next.b2fd8db8"
   },
   "dependencies": {
     "mobx": "4.1.1",
